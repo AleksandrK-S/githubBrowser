@@ -16,12 +16,12 @@ const Home = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-neutral-900">
+    <div className="flex justify-center items-center h-screen">
       <Head title="Searching" />
       <div className="flex flex-col bg-violet-300 rounded border m-80 p-10 w-80">
         <input className="p-2" type="text" id="input-field" value={value} onChange={onChange} />
         <button
-          className="bg-orange-100 m-2 p-2 content-between content-center"
+          className="bg-orange-100 m-2 p-2 content-between content-center rounded border"
           type="button"
           id="search-button"
           onClick={onClick}
