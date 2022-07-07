@@ -16,12 +16,16 @@ const Home = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <Head title="Searching" />
-      <div className="flex flex-col bg-violet-300 rounded border m-80 p-10 w-80">
-        <input className="p-2" type="text" id="input-field" value={value} onChange={onChange} />
+    <div className="flex flex-col justify-center items-center space-y-36 h-screen text-white bg-neutral-900">
+     <div className="flex flex-col items-top font-semibold text-5xl text-white"
+     >
+      Welcome to the github browser! (͡° ͜ʖ ͡°)
+     </div>
+       <Head title="Searching" />
+      <div className="flex flex-col bg-red-400 rounded border border-red-400 p-16  ">
+        <input className="flex flex-col justify-center bg-red-200 text-3xl items-center rounded border border-black h-20 w-80 p-2 m-2 text-neutral-900 placeholder-neutral-600 text-base" type="text" name="userName" placeholder="Enter name..." id="input-field" value={value} onChange={onChange} />
         <button
-          className="bg-orange-100 m-2 p-2 content-between content-center rounded border"
+          className="flex flex-col justify-center items-center transition duration-300 ease-in-out delay-150 text-base p-2 m-16 text-justify h-10 w-48 text-white justify-center border-white bottom-0 bg-neutral-900 content-between content-center rounded border"
           type="button"
           id="search-button"
           onClick={onClick}

@@ -22,10 +22,10 @@ const Repo = () => {
     <div className="flex justify-center items-center flex-col h-screen bg-neutral-900">
       <Header userName={userName} />
       <Head title="Repository" />
-      <div className="bg-orange-100 w-96 p-5 text-center rounded border">{userName}</div>
+      <div className="bg-red-400 border-red-400 w-96 p-5 text-center text-xl font-mono rounded border">Repository list</div>
       {arr.map((e) => (
         <Link
-          className="bg-violet-200 text-neutral w-96 text-center rounded border border-black"
+          className="bg-neutral-900 text-white w-96 text-center rounded border border-white"
           to={`/${userName}/${e.name}`}
           key={e.id}
         >
