@@ -8,7 +8,9 @@ const Header = ({ userName, repositoryName }) => {
       <div className="font-bold my-1 text-neutral font-mono text-lg " id="user-name">
         {userName}
       </div>
-      <div className="font-bold my-1 text-neutral text-lg" id="repository-name">{repositoryName}</div>
+      <div className="font-bold my-1 text-neutral text-lg" id="repository-name">
+        {repositoryName}
+      </div>
       <div className="flex justify-between w-full top-0 px-4 ">
         <Link
           id="go-back"

@@ -20,17 +20,13 @@ const Readme = () => {
   }, [url])
 
   return (
-    <div className="flex justify-center items-center flex-col h-screen bg-neutral-900">
+    <div className="flex justify-center items-center flex-col p-10 min-h-screen bg-neutral-900">
       <Header userName={userName} repositoryName={repositoryName} />
       <Head title="ReadmeFile" />
-      <div id="description">
-        <div className="text-center bg-neutral-900 text-white w-96 text-center rounded border border-white">
-        <ReactMarkdown>
-          {readme}
-        </ReactMarkdown>
+        <div id="description" className="p-10 bg-neutral-600 text-white max-w-full text-center rounded border border-white overflow-x-auto">
+          <ReactMarkdown>{readme}</ReactMarkdown>
         </div>
       </div>
-    </div>
   )
 }
 

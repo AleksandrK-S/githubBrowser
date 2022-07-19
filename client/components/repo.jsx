@@ -19,10 +19,12 @@ const Repo = () => {
   }, [])
 
   return (
-    <div className="flex justify-center items-center flex-col h-screen bg-neutral-900">
+    <div className="flex justify-center items-center flex-col min-h-screen bg-neutral-900">
       <Header userName={userName} />
       <Head title="Repository" />
-      <div className="bg-red-400 border-red-400 w-96 p-5 text-center text-xl font-mono rounded border">Repository list</div>
+      <div className="bg-red-400 border-red-400 w-96 p-5 text-center text-xl font-mono rounded border">
+        Repository list
+      </div>
       {arr.map((e) => (
         <Link
           className="bg-neutral-900 text-white w-96 text-center rounded border border-white"
