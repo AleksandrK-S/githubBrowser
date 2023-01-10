@@ -3,6 +3,8 @@ import Head from './head'
 
 import { history } from '../redux'
 
+// test
+
 const Home = () => {
   const [value, setValue] = useState('')
 
